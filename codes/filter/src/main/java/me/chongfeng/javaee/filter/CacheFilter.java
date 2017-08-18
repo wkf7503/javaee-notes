@@ -22,7 +22,7 @@ import javax.servlet.http.HttpServletResponse;
 import me.chongfeng.javaee.filter.wrapper.CacheResponseWrapper;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public class CacheFilter extends MyFilter {

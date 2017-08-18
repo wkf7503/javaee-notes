@@ -1,5 +1,5 @@
 /**
- * The Apache License 2.0 Copyright (c) 2017 Victor Zhang
+ * The Apache License 2.0 Copyright (c) 2017 Zhang Peng
  */
 package me.chongfeng.javaee.cookie.bean;
 
@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/26.
  */
 public class Person implements Serializable {

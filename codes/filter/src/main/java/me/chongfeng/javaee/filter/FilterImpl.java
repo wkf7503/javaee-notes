@@ -10,7 +10,7 @@ import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public class FilterImpl implements Filter {

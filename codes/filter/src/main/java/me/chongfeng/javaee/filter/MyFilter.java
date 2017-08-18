@@ -16,7 +16,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public abstract class MyFilter implements Filter {

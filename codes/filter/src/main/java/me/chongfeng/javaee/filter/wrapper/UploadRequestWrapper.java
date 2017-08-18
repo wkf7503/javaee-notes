@@ -15,7 +15,7 @@ import org.apache.commons.fileupload.DiskFileUpload;
 import org.apache.commons.fileupload.FileItem;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public class UploadRequestWrapper extends HttpServletRequestWrapper {

@@ -11,7 +11,7 @@ import me.chongfeng.javaee.filter.exception.AccountException;
 import me.chongfeng.javaee.filter.exception.BusinessException;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public class ExceptionHandlerFilter extends MyFilter {

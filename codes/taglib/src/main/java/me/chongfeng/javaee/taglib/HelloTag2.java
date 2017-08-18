@@ -1,5 +1,5 @@
 /**
- * The Apache License 2.0 Copyright (c) 2017 Victor Zhang
+ * The Apache License 2.0 Copyright (c) 2017 Zhang Peng
  */
 package me.chongfeng.javaee.taglib;
 
@@ -10,7 +10,7 @@ import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.tagext.SimpleTagSupport;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/4/3.
  */
 public class HelloTag2 extends SimpleTagSupport {

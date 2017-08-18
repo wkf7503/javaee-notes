@@ -3,7 +3,7 @@
 <table width="100%" cellspacing=1 bgcolor=#CCCCCC>
 	<tr>
 		<td align=center bgcolor=#666666 style="color: #FFFFFF; font-size:14px; height:20px; ">
-			Copyright 2017 &victor zhang
+			Copyright 2017 &Zhang Peng
 		</td>
 	</tr>
 	<tr></tr>

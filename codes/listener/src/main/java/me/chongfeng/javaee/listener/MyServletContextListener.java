@@ -1,5 +1,5 @@
 /**
- * The Apache License 2.0 Copyright (c) 2017 Victor Zhang
+ * The Apache License 2.0 Copyright (c) 2017 Zhang Peng
  */
 package me.chongfeng.javaee.listener;
 
@@ -16,7 +16,7 @@ import org.slf4j.LoggerFactory;
 /**
  * ServletContextListener接口用于监听ServletContext对象的创建和销毁事件。
  *
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/4/4.
  */
 public class MyServletContextListener implements ServletContextListener {

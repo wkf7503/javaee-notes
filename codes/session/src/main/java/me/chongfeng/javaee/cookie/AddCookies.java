@@ -1,5 +1,5 @@
 /**
- * The Apache License 2.0 Copyright (c) 2017 Victor Zhang
+ * The Apache License 2.0 Copyright (c) 2017 Zhang Peng
  */
 package me.chongfeng.javaee.cookie;
 
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/26.
  */
 @WebServlet("/servlet/AddCookies")

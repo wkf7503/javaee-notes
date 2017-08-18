@@ -14,7 +14,7 @@ import java.util.Map;
 /**
  * 单点登录处理类
  *
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/4/4.
  */
 public class LoginSessionListener implements HttpSessionAttributeListener {

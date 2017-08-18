@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import me.chongfeng.javaee.filter.wrapper.WaterMarkResponseWrapper;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public class WaterMarkFilter extends MyFilter {

@@ -19,6 +19,7 @@
 
   <!-- BASIC CONFIGURATION BEGIN -->
   <modules>
+    <module>servlet</module>
     <module>jsp</module>
     <module>session</module>
     <module>filter</module>

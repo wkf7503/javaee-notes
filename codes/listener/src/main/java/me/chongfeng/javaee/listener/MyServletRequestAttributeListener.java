@@ -1,5 +1,5 @@
 /**
- * The Apache License 2.0 Copyright (c) 2017 Victor Zhang
+ * The Apache License 2.0 Copyright (c) 2017 Zhang Peng
  */
 package me.chongfeng.javaee.listener;
 
@@ -13,7 +13,7 @@ import javax.servlet.ServletRequestAttributeListener;
 import javax.servlet.http.HttpSession;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/4/4.
  */
 public class MyServletRequestAttributeListener implements ServletRequestAttributeListener {

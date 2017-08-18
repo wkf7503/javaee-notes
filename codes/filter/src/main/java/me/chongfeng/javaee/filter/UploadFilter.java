@@ -11,7 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import me.chongfeng.javaee.filter.wrapper.UploadRequestWrapper;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/4/4.
  */
 public class UploadFilter extends MyFilter {

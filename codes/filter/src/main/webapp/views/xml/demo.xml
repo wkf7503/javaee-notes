@@ -6,13 +6,13 @@
       <User FriendlyName="(Ricky)"/>
     </From>
     <To>
-      <User FriendlyName="Victor Zhang"/>
+      <User FriendlyName="Zhang Peng"/>
     </To>
     <Text Style="font-family:宋体; color:#000000; ">你会Ajax吗</Text>
   </Message>
   <Message Date="2007-11-21" Time="13:17:43" DateTime="2007-11-21T05:17:43.218Z" SessionID="1">
     <From>
-      <User FriendlyName="Victor Zhang"/>
+      <User FriendlyName="Zhang Peng"/>
     </From>
     <To>
       <User FriendlyName="(Ricky)"/>
@@ -21,7 +21,7 @@
   </Message>
   <Message Date="2007-12-7" Time="15:08:26" DateTime="2007-12-07T07:08:26.531Z" SessionID="2">
     <From>
-      <User FriendlyName="Victor Zhang"/>
+      <User FriendlyName="Zhang Peng"/>
     </From>
     <To>
       <User FriendlyName="(Ricky)"/>
@@ -37,7 +37,7 @@
   </Message>
   <Message Date="2007-12-7" Time="15:08:36" DateTime="2007-12-07T07:08:36.187Z" SessionID="2">
     <From>
-      <User FriendlyName="Victor Zhang"/>
+      <User FriendlyName="Zhang Peng"/>
     </From>
     <To>
       <User FriendlyName="(Ricky)"/>
@@ -49,13 +49,13 @@
       <User FriendlyName="(Ricky)"/>
     </From>
     <To>
-      <User FriendlyName="Victor Zhang"/>
+      <User FriendlyName="Zhang Peng"/>
     </To>
     <Text Style="font-family:宋体; color:#000000; ">ok</Text>
   </Message>
   <Message Date="2007-12-7" Time="15:09:33" DateTime="2007-12-07T07:09:33.375Z" SessionID="3">
     <From>
-      <User FriendlyName="Victor Zhang"/>
+      <User FriendlyName="Zhang Peng"/>
     </From>
     <To>
       <User FriendlyName="(Ricky)"/>
@@ -68,7 +68,7 @@
   </Message>
   <Message Date="2007-12-7" Time="15:27:27" DateTime="2007-12-07T07:27:27.500Z" SessionID="3">
     <From>
-      <User FriendlyName="Victor Zhang"/>
+      <User FriendlyName="Zhang Peng"/>
     </From>
     <To>
       <User FriendlyName="(Ricky)"/>

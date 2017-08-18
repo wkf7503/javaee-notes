@@ -19,7 +19,7 @@ import javax.xml.transform.stream.StreamResult;
 import javax.xml.transform.stream.StreamSource;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/28.
  */
 public class XSLTFilter extends MyFilter {

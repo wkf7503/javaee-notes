@@ -12,7 +12,7 @@
   PersonInfo personInfo = (PersonInfo) session.getAttribute("personInfo");
   if (personInfo == null) {
     personInfo = new PersonInfo();
-    personInfo.setAccount("victor zhang");
+    personInfo.setAccount("Zhang Peng");
     session.setAttribute("personInfo", personInfo);
     out.println("PersonInfo 对象不存在。已经成功新建。sessionId: " + session.getId());
   } else {

@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import me.chongfeng.javaee.filter.exception.AccountException;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public class PrivilegeFilter extends MyFilter {

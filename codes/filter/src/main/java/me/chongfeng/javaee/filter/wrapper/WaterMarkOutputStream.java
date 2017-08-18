@@ -7,7 +7,7 @@ import javax.servlet.ServletOutputStream;
 import javax.servlet.WriteListener;
 
 /**
- * @author victor zhang
+ * @author Zhang Peng
  * @date 2017/3/27.
  */
 public class WaterMarkOutputStream extends ServletOutputStream {
