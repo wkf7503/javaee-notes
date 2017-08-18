@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- MAVEN COORDINATE BEGIN -->
+  <groupId>me.chongfeng</groupId>
+  <artifactId>javaee-notes</artifactId>
+  <version>1.0.0</version>
+  <packaging>pom</packaging>
+  <!-- MAVEN COORDINATE END -->
+
+
+  <!--PROJECT INFO BEGIN-->
+  <name>javaee-notes</name>
+  <description>javaee 学习笔记</description>
+  <!--PROJECT INFO END-->
+
+
+  <!-- BASIC CONFIGURATION BEGIN -->
+  <modules>
+    <module>jsp</module>
+    <module>session</module>
+    <module>filter</module>
+    <module>listener</module>
+    <module>jstl</module>
+    <module>taglib</module>
+  </modules>
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+  <!-- BASIC CONFIGURATION END -->
+
+
+  <!-- BUILD CONFIGURATION BEGIN -->
+  <!-- BUILD CONFIGURATION END -->
+
+
+</project>
