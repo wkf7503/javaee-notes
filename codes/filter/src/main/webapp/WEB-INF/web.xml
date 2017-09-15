@@ -29,7 +29,7 @@
 	<filter>
 		<filter-name>CacheFilter</filter-name>
 		<filter-class>
-      me.chongfeng.javaee.filter.CacheFilter
+      io.github.atlantis1024.javaee.filter.CacheFilter
     </filter-class>
 		<init-param>
 			<param-name>cache</param-name>
@@ -51,7 +51,7 @@
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>
 		<filter-class>
-      me.chongfeng.javaee.filter.CharacterEncodingFilter
+      io.github.atlantis1024.javaee.filter.CharacterEncodingFilter
     </filter-class>
 		<init-param>
 			<param-name>characterEncoding</param-name>
@@ -70,7 +70,7 @@
 	<filter>
 		<filter-name>ExceptionHandlerFilter</filter-name>
 		<filter-class>
-      me.chongfeng.javaee.filter.ExceptionHandlerFilter
+      io.github.atlantis1024.javaee.filter.ExceptionHandlerFilter
     </filter-class>
 	</filter>
 	<filter-mapping>
@@ -80,7 +80,7 @@
 
 	<filter>
 		<filter-name>GZipFilter</filter-name>
-		<filter-class>me.chongfeng.javaee.filter.GZipFilter</filter-class>
+		<filter-class>io.github.atlantis1024.javaee.filter.GZipFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>GZipFilter</filter-name>
@@ -90,7 +90,7 @@
 	<filter>
 		<filter-name>ImageRedirectFilter</filter-name>
 		<filter-class>
-      me.chongfeng.javaee.filter.ImageRedirectFilter
+      io.github.atlantis1024.javaee.filter.ImageRedirectFilter
     </filter-class>
 	</filter>
 	<filter-mapping>
@@ -100,7 +100,7 @@
 
 	<filter>
 		<filter-name>LogFilter</filter-name>
-		<filter-class>me.chongfeng.javaee.filter.LogFilter</filter-class>
+		<filter-class>io.github.atlantis1024.javaee.filter.LogFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>LogFilter</filter-name>
@@ -110,7 +110,7 @@
 	<filter>
 		<filter-name>OutputReplaceFilter</filter-name>
 		<filter-class>
-      me.chongfeng.javaee.filter.OutputReplaceFilter
+      io.github.atlantis1024.javaee.filter.OutputReplaceFilter
     </filter-class>
 		<init-param>
 			<param-name>file</param-name>
@@ -124,7 +124,7 @@
 
 	<filter>
 		<filter-name>UploadFilter</filter-name>
-		<filter-class>me.chongfeng.javaee.filter.UploadFilter</filter-class>
+		<filter-class>io.github.atlantis1024.javaee.filter.UploadFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>UploadFilter</filter-name>
@@ -134,7 +134,7 @@
 	<filter>
 		<filter-name>PrivilegeFilter</filter-name>
 		<filter-class>
-      me.chongfeng.javaee.filter.PrivilegeFilter
+      io.github.atlantis1024.javaee.filter.PrivilegeFilter
     </filter-class>
 		<init-param>
 			<param-name>file</param-name>
@@ -149,7 +149,7 @@
 	<filter>
 		<filter-name>WaterMarkFilter</filter-name>
 		<filter-class>
-      me.chongfeng.javaee.filter.WaterMarkFilter
+      io.github.atlantis1024.javaee.filter.WaterMarkFilter
     </filter-class>
 		<init-param>
 			<param-name>waterMarkFile</param-name>
@@ -165,7 +165,7 @@
 
 	<filter>
 		<filter-name>XSLTFilter</filter-name>
-		<filter-class>me.chongfeng.javaee.filter.XSLTFilter</filter-class>
+		<filter-class>io.github.atlantis1024.javaee.filter.XSLTFilter</filter-class>
 	</filter>
 	<filter-mapping>
 		<filter-name>XSLTFilter</filter-name>

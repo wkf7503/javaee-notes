@@ -4,7 +4,7 @@
 	<short-name>Example TLD</short-name>
 	<tag>
 		<name>Hello</name>
-		<tag-class>me.chongfeng.javaee.taglib.HelloTag</tag-class>
+		<tag-class>io.github.atlantis1024.javaee.taglib.HelloTag</tag-class>
 		<body-content>empty</body-content>
 	</tag>
 </taglib>

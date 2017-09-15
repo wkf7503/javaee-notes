@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- MAVEN COORDINATE BEGIN -->
-  <groupId>me.chongfeng</groupId>
+  <groupId>io.github.atlantis1024</groupId>
   <artifactId>javaee-notes-servlet</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>

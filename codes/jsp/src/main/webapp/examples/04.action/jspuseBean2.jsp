@@ -7,10 +7,10 @@
 <body><br/>
 
 <%-- 定义一个 session 范围内的计数器，记录个人的访问信息 --%>
-<jsp:useBean id="personCount" class="me.chongfeng.javaee.jsp.bean.Counter" scope="session"/>
+<jsp:useBean id="personCount" class="io.github.atlantis1024.javaee.jsp.bean.Counter" scope="session"/>
 
 <%-- 定义一个 application 范围内的计数器，记录所有人的访问信息 --%>
-<jsp:useBean id="totalCount" class="me.chongfeng.javaee.jsp.bean.Counter" scope="application"/>
+<jsp:useBean id="totalCount" class="io.github.atlantis1024.javaee.jsp.bean.Counter" scope="application"/>
 
 <div align="center">
   <form action="method.jsp" method="get">

@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<fmt:bundle basename="me.chongfeng.javaee.util.Example">
+<fmt:bundle basename="io.github.atlantis1024.javaee.util.Example">
   <fmt:message key="count.one"/><br/>
   <fmt:message key="count.two"/><br/>
   <fmt:message key="count.three"/><br/>
@@ -16,7 +16,7 @@
 
 <!-- 修改地区-->
 <fmt:setLocale value="es_ES"/>
-<fmt:bundle basename="me.chongfeng.javaee.util.Example">
+<fmt:bundle basename="io.github.atlantis1024.javaee.util.Example">
   <fmt:message key="count.one"/><br/>
   <fmt:message key="count.two"/><br/>
   <fmt:message key="count.three"/><br/>

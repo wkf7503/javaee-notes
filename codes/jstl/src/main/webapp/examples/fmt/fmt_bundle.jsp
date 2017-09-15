@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<fmt:bundle basename="me.chongfeng.javaee.util.Example" prefix="count.">
+<fmt:bundle basename="io.github.atlantis1024.javaee.util.Example" prefix="count.">
   <fmt:message key="one"/><br/>
   <fmt:message key="two"/><br/>
   <fmt:message key="three"/><br/>

@@ -10,7 +10,7 @@
 
 <fmt:requestEncoding value="UTF-8"/>
 <fmt:setLocale value="es_ES"/>
-<fmt:setBundle basename="me.chongfeng.javaee.util.Example" var="lang"/>
+<fmt:setBundle basename="io.github.atlantis1024.javaee.util.Example" var="lang"/>
 
 <fmt:message key="count.one" bundle="${lang}"/><br/>
 <fmt:message key="count.two" bundle="${lang}"/><br/>

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@page import="java.util.List"%>
 <%@page import="java.util.ArrayList"%>
-<%@page import="me.chongfeng.javaee.taglib.bean.Person"%>
+<%@page import="io.github.atlantis1024.javaee.taglib.bean.Person"%>
 <%
             if (true)
             {

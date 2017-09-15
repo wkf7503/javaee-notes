@@ -1,5 +1,5 @@
 <%@ page language="java" pageEncoding="UTF-8" %>
-<jsp:directive.page import="me.chongfeng.javaee.servlet.bean.Person"/>
+<jsp:directive.page import="io.github.atlantis1024.javaee.servlet.bean.Person"/>
 <jsp:directive.page import="java.text.DateFormat"/>
 <jsp:directive.page import="java.text.SimpleDateFormat"/>
 <%@ page import="java.util.Date" %>

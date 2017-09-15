@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
-<%@ page import="me.chongfeng.javaee.filter.exception.AccountException" %>
-<%@ page import="me.chongfeng.javaee.filter.exception.BusinessException" %>
+<%@ page import="io.github.atlantis1024.javaee.filter.exception.AccountException" %>
+<%@ page import="io.github.atlantis1024.javaee.filter.exception.BusinessException" %>
 <%
 	String action = request.getParameter("action");
 

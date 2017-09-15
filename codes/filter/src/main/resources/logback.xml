@@ -32,7 +32,7 @@
 
 	<!-- logger begin -->
 	<!-- 本项目的日志记录，分级打印 -->
-	<logger name="me.chongfeng.javaee" level="TRACE" additivity="false">
+	<logger name="io.github.atlantis1024.javaee" level="TRACE" additivity="false">
 		<appender-ref ref="STDOUT"/>
 		<appender-ref ref="ALL"/>
 	</logger>
