@@ -8,7 +8,7 @@
   <servlet>
     <servlet-name>SocketServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.SocketServlet
+      io.github.zp1024.javaee.servlet.SocketServlet
     </servlet-class>
   </servlet>
   <servlet-mapping>

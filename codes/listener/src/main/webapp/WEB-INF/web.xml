@@ -12,53 +12,53 @@
 	<!--监听对象的创建和销毁-->
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.MyHttpSessionListener
+      io.github.zp1024.javaee.listener.MyHttpSessionListener
     </listener-class>
 	</listener>
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.MyServletContextListener
+      io.github.zp1024.javaee.listener.MyServletContextListener
     </listener-class>
 	</listener>
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.MyServletRequestListener
+      io.github.zp1024.javaee.listener.MyServletRequestListener
     </listener-class>
 	</listener>
 
 	<!--监听对象的属性变化-->
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.MyHttpSessionAttributeListener
+      io.github.zp1024.javaee.listener.MyHttpSessionAttributeListener
     </listener-class>
 	</listener>
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.MyServletContextAttributeListener
+      io.github.zp1024.javaee.listener.MyServletContextAttributeListener
     </listener-class>
 	</listener>
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.MyServletRequestAttributeListener
+      io.github.zp1024.javaee.listener.MyServletRequestAttributeListener
     </listener-class>
 	</listener>
 
 	<!--监听Session内的对象-->
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.MyHttpSessionBindingListener
+      io.github.zp1024.javaee.listener.MyHttpSessionBindingListener
     </listener-class>
 	</listener>
 
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.LoginSessionListener
+      io.github.zp1024.javaee.listener.LoginSessionListener
     </listener-class>
 	</listener>
 
 	<listener>
 		<listener-class>
-      io.github.atlantis1024.javaee.listener.PersonInfoListener
+      io.github.zp1024.javaee.listener.PersonInfoListener
     </listener-class>
 	</listener>
 	<!-- listener end -->

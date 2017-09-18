@@ -7,7 +7,7 @@
   <!-- [Part 1] BASIC SETTINGS BEGIN -->
 
   <!-- MAVEN COORDINATE BEGIN -->
-  <groupId>io.github.atlantis1024</groupId>
+  <groupId>io.github.zp1024</groupId>
   <artifactId>javaee-notes</artifactId>
   <version>1.0.0</version>
   <packaging>pom</packaging>
@@ -44,7 +44,7 @@
   <!-- [Part 3] PROJECT INFO BEGIN -->
   <name>javaee-notes</name>
   <description>javaee 学习笔记</description>
-  <url>https://github.com/atlantis1024/javaee-notes</url>
+  <url>https://github.com/zp1024/javaee-notes</url>
   <inceptionYear>2016-2017</inceptionYear>
   <licenses>
     <license>
@@ -67,12 +67,12 @@
   <!-- [Part 4] ENVIRONMENT SETTINGS BEGIN -->
   <issueManagement>
     <system>Github</system>
-    <url>https://github.com/atlantis1024/javaee-notes/issues</url>
+    <url>https://github.com/zp1024/javaee-notes/issues</url>
   </issueManagement>
   <scm>
-    <url>https://github.com/atlantis1024/javaee-notes</url>
-    <connection>scm:git:git://github.com/atlantis1024/javaee-notes.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com:atlantis1024/javaee-notes.git</developerConnection>
+    <url>https://github.com/zp1024/javaee-notes</url>
+    <connection>scm:git:git://github.com/zp1024/javaee-notes.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com:zp1024/javaee-notes.git</developerConnection>
   </scm>
   <!-- [Part 4] ENVIRONMENT SETTINGS END -->
 

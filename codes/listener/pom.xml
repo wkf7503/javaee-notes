@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- MAVEN COORDINATE BEGIN -->
-  <groupId>io.github.atlantis1024</groupId>
+  <groupId>io.github.zp1024</groupId>
   <artifactId>javaee-notes-listener</artifactId>
   <version>1.0.0</version>
   <packaging>war</packaging>

@@ -8,7 +8,7 @@
   <servlet>
     <servlet-name>FirstServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.FirstServlet
+      io.github.zp1024.javaee.servlet.FirstServlet
     </servlet-class>
     <init-param>
       <param-name>message</param-name>
@@ -32,7 +32,7 @@
   <servlet>
     <servlet-name>RequestServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.RequestServlet
+      io.github.zp1024.javaee.servlet.RequestServlet
     </servlet-class>
   </servlet>
   <servlet-mapping>
@@ -43,7 +43,7 @@
   <servlet>
     <servlet-name>InitParamServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.InitParamServlet
+      io.github.zp1024.javaee.servlet.InitParamServlet
     </servlet-class>
     <init-param>
       <param-name>root</param-name>
@@ -71,7 +71,7 @@
   <servlet>
     <servlet-name>ContextParamServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.ContextParamServlet
+      io.github.zp1024.javaee.servlet.ContextParamServlet
     </servlet-class>
   </servlet>
   <servlet-mapping>
@@ -82,7 +82,7 @@
   <servlet>
     <servlet-name>InjectionServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.InjectionServlet
+      io.github.zp1024.javaee.servlet.InjectionServlet
     </servlet-class>
   </servlet>
   <servlet-mapping>
@@ -93,7 +93,7 @@
   <servlet>
     <servlet-name>PostServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.PostServlet
+      io.github.zp1024.javaee.servlet.PostServlet
     </servlet-class>
   </servlet>
   <servlet-mapping>
@@ -104,20 +104,20 @@
   <servlet>
     <servlet-name>ImageServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.ImageServlet
+      io.github.zp1024.javaee.servlet.ImageServlet
     </servlet-class>
     <load-on-startup>1</load-on-startup>
   </servlet>
   <servlet>
     <servlet-name>UploadServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.UploadServlet
+      io.github.zp1024.javaee.servlet.UploadServlet
     </servlet-class>
   </servlet>
   <servlet>
     <servlet-name>LifeCycleServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.LifeCycleServlet
+      io.github.zp1024.javaee.servlet.LifeCycleServlet
     </servlet-class>
     <init-param>
       <param-name>startPoint</param-name>
@@ -127,31 +127,31 @@
   <servlet>
     <servlet-name>AnnotationServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.AnnotationServlet
+      io.github.zp1024.javaee.servlet.AnnotationServlet
     </servlet-class>
   </servlet>
   <servlet>
     <servlet-name>ForwardServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.ForwardServlet
+      io.github.zp1024.javaee.servlet.ForwardServlet
     </servlet-class>
   </servlet>
   <servlet>
     <servlet-name>RedirectServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.RedirectServlet
+      io.github.zp1024.javaee.servlet.RedirectServlet
     </servlet-class>
   </servlet>
   <servlet>
     <servlet-name>ProgressUploadServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.upload.ProgressUploadServlet
+      io.github.zp1024.javaee.servlet.upload.ProgressUploadServlet
     </servlet-class>
   </servlet>
   <servlet>
     <servlet-name>ThreadSafetyServlet</servlet-name>
     <servlet-class>
-      io.github.atlantis1024.javaee.servlet.ThreadSafetyServlet
+      io.github.zp1024.javaee.servlet.ThreadSafetyServlet
     </servlet-class>
   </servlet>
 

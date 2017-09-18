@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <jsp:directive.page
-	import="io.github.atlantis1024.javaee.listener.util.ApplicationConstants" />
+	import="io.github.zp1024.javaee.listener.util.ApplicationConstants" />
 <jsp:directive.page import="java.util.Date" />
 <jsp:directive.page import="java.text.DateFormat" />
-<jsp:directive.page import="io.github.atlantis1024.javaee.listener.bean.PersonInfo"/>
+<jsp:directive.page import="io.github.zp1024.javaee.listener.bean.PersonInfo"/>
 <style>
 	body, td {font-size: 12px; }
 </style>

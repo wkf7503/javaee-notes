@@ -7,7 +7,7 @@
 <body>
 
   <h2>jsp:setProperty和jsp:getProperty使用范例</h2>
-  <jsp:useBean id="msg" class="io.github.atlantis1024.javaee.jsp.bean.Message" />
+  <jsp:useBean id="msg" class="io.github.zp1024.javaee.jsp.bean.Message" />
 
   <jsp:setProperty name="msg" property="content" value="打死也不说" />
 

@@ -5,7 +5,7 @@
 
 	<servlet>
 		<servlet-name>AddCookies</servlet-name>
-		<servlet-class>io.github.atlantis1024.javaee.servlet.cookie.AddCookies</servlet-class>
+		<servlet-class>io.github.zp1024.javaee.servlet.cookie.AddCookies</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>AddCookies</servlet-name>
@@ -14,7 +14,7 @@
 
 	<servlet>
 		<servlet-name>ReadCookies</servlet-name>
-		<servlet-class>io.github.atlantis1024.javaee.servlet.cookie.ReadCookies</servlet-class>
+		<servlet-class>io.github.zp1024.javaee.servlet.cookie.ReadCookies</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>ReadCookies</servlet-name>
@@ -23,7 +23,7 @@
 
 	<servlet>
 		<servlet-name>DeleteCookies</servlet-name>
-		<servlet-class>io.github.atlantis1024.javaee.servlet.cookie.DeleteCookies</servlet-class>
+		<servlet-class>io.github.zp1024.javaee.servlet.cookie.DeleteCookies</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>DeleteCookies</servlet-name>
@@ -32,7 +32,7 @@
 
 	<servlet>
 		<servlet-name>SessionTrackServlet</servlet-name>
-		<servlet-class>io.github.atlantis1024.javaee.session.SessionTrackServlet</servlet-class>
+		<servlet-class>io.github.zp1024.javaee.session.SessionTrackServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>SessionTrackServlet</servlet-name>
