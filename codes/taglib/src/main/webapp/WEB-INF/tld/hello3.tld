@@ -4,7 +4,7 @@
   <short-name>Example TLD with Body</short-name>
   <tag>
     <name>Hello</name>
-    <tag-class>io.github.zp1024.javaee.taglib.HelloTag3</tag-class>
+    <tag-class>io.github.dunwu.javaee.taglib.HelloTag3</tag-class>
     <body-content>scriptless</body-content>
     <attribute>
        <name>message</name>

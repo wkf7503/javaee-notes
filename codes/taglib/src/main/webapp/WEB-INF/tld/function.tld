@@ -16,7 +16,7 @@
 		</description>
 		<name>length</name>
 		<function-class>
-      io.github.zp1024.javaee.taglib.function.Function
+      io.github.dunwu.javaee.taglib.function.Function
     </function-class>
 		<function-signature>
 			int length(java.lang.Object)
@@ -31,7 +31,7 @@
 		</description>
 		<name>substring</name>
 		<function-class>
-      io.github.zp1024.javaee.taglib.function.Function
+      io.github.dunwu.javaee.taglib.function.Function
     </function-class>
 		<function-signature>
 			java.lang.String substring(java.lang.String, int)

@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<jsp:directive.page import="io.github.zp1024.javaee.listener.bean.PersonInfo" />
+<jsp:directive.page import="io.github.dunwu.javaee.listener.bean.PersonInfo" />
 <%
 	String action = request.getParameter("action");
 	String account = request.getParameter("account");

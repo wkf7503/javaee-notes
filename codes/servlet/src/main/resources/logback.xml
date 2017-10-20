@@ -33,7 +33,7 @@
 
   <!-- logger begin -->
   <!-- 本项目的日志记录，分级打印 -->
-  <logger name="io.github.zp1024.javaee" level="TRACE" additivity="false">
+  <logger name="io.github.dunwu.javaee" level="TRACE" additivity="false">
     <appender-ref ref="STDOUT" />
   </logger>
 

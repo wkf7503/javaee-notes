@@ -70,7 +70,7 @@ public String decode(String filepath) throws IOException, NotFoundException {
 }
 ```
 
-完整参考示例：[<u>测试例代码</u>](https://github.com/zp1024/JavaParty/blob/master/toolbox/image/src/test/java/org/zp/image/QRCodeUtilTest.java)
+完整参考示例：[<u>测试例代码</u>](https://github.com/dunwu/JavaParty/blob/master/toolbox/image/src/test/java/org/zp/image/QRCodeUtilTest.java)
 
 以下是一个生成的二维码图片示例：
 

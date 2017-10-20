@@ -7,7 +7,7 @@
 <body><br/>
 
 <%-- 声明 person 类对象 --%>
-<jsp:useBean id="person" class="io.github.zp1024.javaee.jsp.bean.Person" scope="page"></jsp:useBean>
+<jsp:useBean id="person" class="io.github.dunwu.javaee.jsp.bean.Person" scope="page"></jsp:useBean>
 
 <%-- 设置 person 的所有属性， 属性值从 request 中自动取得，* 表示所有属性 --%>
 <jsp:setProperty name="person" property="*"/>
