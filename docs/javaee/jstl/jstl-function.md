@@ -1,4 +1,12 @@
-## JSTL函数
+---
+title: JSTL 函数
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jstl
+---
 
 JSTL包含一系列标准函数，大部分是通用的字符串处理函数。引用JSTL函数库的语法如下：
 

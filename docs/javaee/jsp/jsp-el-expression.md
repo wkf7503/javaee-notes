@@ -1,4 +1,12 @@
-# JSP 表达式语言
+---
+title: JSP 表达式语言
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jsp
+---
 
 EL表达式是用`${}`括起来的脚本，用来更方便地读取对象。EL表达式写在JSP的HTML代码中，而不能写在`<%`与`%>`引起的JSP脚本中。
 

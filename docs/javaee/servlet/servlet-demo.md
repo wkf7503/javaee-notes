@@ -1,10 +1,20 @@
-# 编写Servlet
+---
+title: JavaEE Servlet 示例
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- servlet
+---
 
-# 部署Servlet
+## 编写Servlet
 
-## web.xml是什么
+### 部署Servlet
 
-## <servlet>
+### web.xml是什么
+
+### servlet 元素
 
 `<servlet>`元素用于注册Servlet。
 
@@ -20,7 +30,7 @@
 </servlet>
 ```
 
-## <servlet-mapping>
+### servlet-mapping 元素
 
 `<servlet-mapping>`元素用于映射一个已注册的Servlet的一个对外访问路径。
 
@@ -45,17 +55,15 @@
 
 ### url-pattern的通配符
 
-/
+`/`
 
 如果某个Servlet的映射路径仅仅为一个正斜杠`/`，那么这个Servlet就成为当前Web应用程序的缺省Servlet。 凡是在`web.xml`文件中找不到匹配的`<servlet-mapping>`元素的URL，它们的访问请求都将交给缺省Servlet处理，也就是说，缺省Servlet用于处理所有其他Servlet都不处理的访问请求。
 
-*
+`*`
 
 `*`可以匹配任意的字符。
 
-/*
-
-## <init-param>和<context-param>
+### init-param 元素和 context-param 元素
 
 `<init-param>`标签用于为当前servlet配置一些初始化参数。
 

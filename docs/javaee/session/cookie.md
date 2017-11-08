@@ -1,4 +1,13 @@
-# Cookie
+---
+title: JavaEE Cookie
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- cookie
+- session
+---
 
 由于Http是一种无状态的协议，服务器单从网络连接上无从知道客户身份。
 

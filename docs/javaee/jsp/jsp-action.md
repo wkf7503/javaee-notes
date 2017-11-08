@@ -1,4 +1,12 @@
-# JSP行为
+---
+title: JSP 行为
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jsp
+---
 
 JSP行为是一组JSP内置的标签，只需要书写很少的标记代码就能使用JSP提供的丰富功能。JSP行为是对常用的JSP功能的抽象与封装，包括两种，自定义JSP行为与标准JSP行为。
 

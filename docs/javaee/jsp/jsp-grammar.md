@@ -1,4 +1,12 @@
-# JSP 语法
+---
+title: JSP 语法
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jsp
+---
 
 本小节将会简单地介绍一下JSP开发中的基础语法。
 

@@ -1,4 +1,12 @@
-# 格式化标签
+---
+title: JSTL 格式化标签
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jstl
+---
 
 JSTL格式化标签用来格式化并输出文本、日期、时间、数字。引用格式化标签库的语法如下：
 

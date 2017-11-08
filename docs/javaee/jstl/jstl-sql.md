@@ -1,4 +1,12 @@
-# SQL标签
+---
+title: JSTL SQL标签
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jstl
+---
 
 JSTL SQL标签库提供了与关系型数据库（Oracle，MySQL，SQL Server等等）进行交互的标签。引用SQL标签库的语法如下：
 

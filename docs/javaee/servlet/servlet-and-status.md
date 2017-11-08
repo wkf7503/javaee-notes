@@ -1,4 +1,15 @@
-# Servlet HTTP 状态码
+---
+title: JavaEE Servlet HTTP 状态码
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- servlet
+- http
+---
+
+## HTTP 状态码
 
 HTTP 请求和 HTTP 响应消息的格式是类似的，结构如下：
 
@@ -72,9 +83,9 @@ HeaderN: ...
 | 504  | Gateway Timeout               | 网关超时。                                    |
 | 505  | HTTP Version Not Supported    | 服务器不支持"HTTP协议"版本。                        |
 
-## 设置 HTTP 状态代码的方法
+## 设置 HTTP 状态码的方法
 
-下面的方法可用于在 Servlet 程序中设置 HTTP 状态码。这些方法通过 *HttpServletResponse* 对象可用。
+下面的方法可用于在 Servlet 程序中设置 HTTP 状态码。这些方法通过 `HttpServletResponse` 对象可用。
 
 | 序号   | 方法 & 描述                                  |
 | ---- | ---------------------------------------- |
@@ -86,7 +97,7 @@ HeaderN: ...
 
 下面的例子把 407 错误代码发送到客户端浏览器，浏览器会显示 "Need authentication!!!" 消息。
 
-```
+```java
 // 导入必需的 java 库
 import java.io.*;
 import javax.servlet.*;

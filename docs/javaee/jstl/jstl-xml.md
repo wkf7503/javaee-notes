@@ -1,4 +1,12 @@
-# XML 标签
+---
+title: JSTL XML标签
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jstl
+---
 
 JSTL XML标签库提供了创建和操作XML文档的标签。引用XML标签库的语法如下：
 

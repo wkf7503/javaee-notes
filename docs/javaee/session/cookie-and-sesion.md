@@ -1,4 +1,13 @@
-# Cookie vs. Session
+---
+title: JavaEE Cookie vs. Session
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- cookie
+- session
+---
 
 ## 存取方式
 

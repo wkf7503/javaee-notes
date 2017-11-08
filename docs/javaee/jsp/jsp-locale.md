@@ -1,4 +1,12 @@
-# JSP 国际化
+---
+title: JSP 国际化
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jsp
+---
 
 在开始前，需要解释几个重要的概念：
 

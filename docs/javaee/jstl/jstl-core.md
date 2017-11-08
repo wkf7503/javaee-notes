@@ -1,4 +1,12 @@
-# 核心标签
+---
+title: JSTL 核心标签
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jstl
+---
 
 核心标签是最常用的JSTL标签。引用核心标签库的语法如下：
 

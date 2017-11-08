@@ -1,4 +1,12 @@
-# JSP 隐式对象
+---
+title: JSP 隐式对象
+date: 2017/11/08
+categories:
+- javaee
+tags:
+- javaee
+- jsp
+---
 
 JSP隐式对象是JSP容器为每个页面提供的Java对象，开发者可以直接使用它们而不用显式声明。JSP隐式对象也被称为预定义变量。
 
