@@ -1,4 +1,4 @@
-# 概述
+## 概述
 
 `Thumbnailator` 是一个开源的 **Java** 项目，它提供了非常简单的 API 来对图片进行缩放、旋转以及加水印的处理。
 
@@ -13,9 +13,9 @@ Thumbnails.of(new File("path/to/directory").listFiles())
 
 当然，Thumbnailator 还有一些使用细节，下面我会一一道来。
 
-# 核心 API
+## 核心 API
 
-## Thumbnails
+### Thumbnails
 
 `Thumbnails` 是使用 Thumbnailator 创建缩略图的主入口。
 
@@ -44,13 +44,13 @@ public static Builder<BufferedImage> fromImages(Iterable<BufferedImage> images) 
 
 需要注意一点：**如果输入是多个对象（无论你是直接输入容器对象或使用可变参数方式传入多个对象），则输出也必须选用输出多个对象的方式，否则会报异常。**
 
-## Thumbnails.Builder
+### Thumbnails.Builder
 
 `Thumbnails.Builder` 是 `Thumbnails` 的内部静态类。它用于设置生成缩略图任务的相关参数。
 
 ***注：`Thumbnails.Builder` 的构造函数是私有函数。所以，它只允许通过 `Thumbnails` 的实例化函数来进行初始化。***
 
-### 设置参数的函数
+#### 设置参数的函数
 
 `Thumbnails.Builder` 提供了一组函数链形式的接口来设置缩放图参数。
 
@@ -83,7 +83,7 @@ Thumbnails.of(new File("original.jpg"))
 
 好处，不言自明：那就是大大简化了代码。
 
-### 输出函数
+#### 输出函数
 
 `Thumbnails.Builder` 提供了一组重载函数来输出生成的缩放图。
 
@@ -108,7 +108,7 @@ public void toOutputStream(OutputStream os) throws IOException {...}
 public void toOutputStreams(Iterable<? extends OutputStream> iterable) throws IOException {...}
 ```
 
-## 工作流
+### 工作流
 
 Thumbnailator 的工作步骤十分简单，可分为三步：
 
@@ -120,13 +120,13 @@ Thumbnailator 的工作步骤十分简单，可分为三步：
 
 > 更多详情可以参考： [<u>Thumbnailator 官网javadoc</u>](https://coobird.github.io/thumbnailator/javadoc/0.4.8/)
 
-# 实战
+## 实战
 
 前文介绍了 Thumbnailator 的核心 API，接下来我们就可以通过实战来看看 Thumbnailator 究竟可以做些什么。
 
 Thumbnailator 生成什么样的图片，是根据设置参数来决定的。
 
-## 安装
+### 安装
 
 maven项目中引入依赖：
 
@@ -137,7 +137,7 @@ maven项目中引入依赖：
   <version>[0.4, 0.5)</version>
 </dependency>
 ```
-## 图片缩放
+### 图片缩放
 
 `Thumbnails.Builder` 的 `size` 函数可以设置新图片精确的宽度和高度，也可以用 `scale` 函数设置缩放比例。
 
@@ -161,7 +161,7 @@ Thumbnails.of("oldFile.png")
 **newFile_scale_1.0_0.5.png**
 ![lion_scale_1.0_0.5.png](http://upload-images.jianshu.io/upload_images/3101171-a01ea4515fff865d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 图片旋转
+### 图片旋转
 
 `Thumbnails.Builder` 的 `size` 函数可以设置新图片的旋转角度。
 
@@ -181,7 +181,7 @@ Thumbnails.of("oldFile.png")
 
 ![lion2_rotate_90.png](http://upload-images.jianshu.io/upload_images/3101171-17d54bc33b38d45b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 加水印
+### 加水印
 
 `Thumbnails.Builder` 的 `watermark` 函数可以为图片添加水印图片。第一个参数是水印的位置；第二个参数是水印图片的缓存数据；第三个参数是透明度。
 
@@ -201,7 +201,7 @@ Thumbnails.of("oldFile.png")
 
 ![lion2_watermark.png](http://upload-images.jianshu.io/upload_images/3101171-93eb7ef71b811a0c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-## 批量处理图片
+### 批量处理图片
 
 下面以批量给图片加水印来展示一下如何处理多个图片文件。
 
@@ -215,8 +215,8 @@ Thumbnails.of("oldFile.png", "oldFile2.png")
 		.toFiles(destinationDir, Rename.PREFIX_DOT_THUMBNAIL);
 ```
 
-> **需要参考完整测试例代码请** [<u>**点击这里**</u>](https://github.com/dunwu/JavaParty/blob/master/toolbox/image/src/test/java/org/zp/image/ThumbnailatorTest.java)
+> **需要参考完整测试例代码请** [<u>**点击这里**</u>](https://github.com/atlantis1024/JavaParty/blob/master/toolbox/image/src/test/java/org/zp/image/ThumbnailatorTest.java)
 
-# 参考
+## 参考
 
 [Thumbnailator 官方示例文档](https://github.com/coobird/thumbnailator/wiki/Examples)

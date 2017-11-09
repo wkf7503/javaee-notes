@@ -1,14 +1,14 @@
-# 概述
+## 概述
 
 `ZXing` 是一个开源 Java 类库用于解析多种格式的 1D/2D 条形码。目标是能够对QR编码、Data Matrix、UPC的1D条形码进行解码。 其提供了多种平台下的客户端包括：J2ME、J2SE和Android。 
 
 官网：[<u>ZXing github仓库</u>](https://github.com/zxing/zxing)
 
-# 实战
+## 实战
 
 ***本例演示如何在一个非 android 的 Java 项目中使用 ZXing 来生成、解析二维码图片。***
 
-## 安装
+### 安装
 
 maven项目只需引入依赖：
 
@@ -27,7 +27,7 @@ maven项目只需引入依赖：
 
 如果非maven项目，就去官网下载发布版本：[<u>下载地址</u>](https://github.com/zxing/zxing/releases)
 
-## 生成二维码图片
+### 生成二维码图片
 
 ZXing 生成二维码图片有以下步骤：
 
@@ -46,7 +46,7 @@ public void encode(String content, String filepath) throws WriterException, IOEx
 }
 ```
 
-## 解析二维码图片
+### 解析二维码图片
 
 ZXing 解析二维码图片有以下步骤：
 
@@ -70,12 +70,12 @@ public String decode(String filepath) throws IOException, NotFoundException {
 }
 ```
 
-完整参考示例：[<u>测试例代码</u>](https://github.com/dunwu/JavaParty/blob/master/toolbox/image/src/test/java/org/zp/image/QRCodeUtilTest.java)
+完整参考示例：[<u>测试例代码</u>](https://github.com/atlantis1024/JavaParty/blob/master/toolbox/image/src/test/java/org/zp/image/QRCodeUtilTest.java)
 
 以下是一个生成的二维码图片示例：
 
 ![qrcode.png](http://upload-images.jianshu.io/upload_images/3101171-26b73730088f0ab8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-# 参考
+## 参考
 
 [ZXing github仓库](https://github.com/zxing/zxing)

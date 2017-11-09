@@ -1,3 +1,16 @@
+## 安装
+
+在 pom 中添加依赖
+
+```
+<dependency>
+  <groupId>junit</groupId>
+  <artifactId>junit</artifactId>
+  <version>4.9</version>
+  <scope>test</scope>
+</dependency>
+```
+
 ## JUnit 注解
 
 JUnit 4 开始使用 Java 5 中的注解（annotation），常用的几个 annotation 介绍：
@@ -13,8 +26,6 @@ JUnit 4 开始使用 Java 5 中的注解（annotation），常用的几个 annot
 `@AfterClass`：针对所有测试，只执行一次，且必须为static void
 
 `@Ignore`：忽略的测试方法
-
-
 
 一个单元测试用例执行顺序为：
 

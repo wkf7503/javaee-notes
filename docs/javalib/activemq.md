@@ -1,84 +1,70 @@
-# JMS基本概念
+## JMS基本概念
 
 `JMS` 即 **Java消息服务（Java Message Service）API**，是一个Java平台中关于面向消息中间件的API。它用于在两个应用程序之间，或分布式系统中发送消息，进行异步通信。Java消息服务是一个与具体平台无关的API，绝大多数MOM提供商都对JMS提供支持。
 
-
-
-## 消息模型
+### 消息模型
 
 JMS 有两种消息模型：
 - Point-to-Point(P2P)
 - Publish/Subscribe(Pub/Sub)
 
-### P2P的特点
+#### P2P的特点
 
-![jms-point_to_point](https://raw.githubusercontent.com/dunwu/JavaParty/master/images/%E7%BC%96%E7%A8%8B/middleware/jms/jms-p2p.jpg)
+![jms-pointToPoint.gif](http://oyz7npk35.bkt.clouddn.com//image/java/libs/activemq/jms-pointToPoint.gif)
 
 在点对点的消息系统中，消息分发给一个单独的使用者。点对点消息往往与队列 `javax.jms.Queue` 相关联。
 
-每个消息只有一个消费者（Consumer）(即一旦被消费，消息就不再在消息队列中)
-发送者和接收者之间在时间上没有依赖性，也就是说当发送者发送了消息之后，不管接收者有没有正在运行，它不会影响到消息被发送到队列
-接收者在成功接收消息之后需向队列应答成功
+每个消息只有一个消费者（Consumer）(即一旦被消费，消息就不再在消息队列中)。
+
+发送者和接收者之间在时间上没有依赖性，也就是说当发送者发送了消息之后，不管接收者有没有正在运行，它不会影响到消息被发送到队列。
+
+接收者在成功接收消息之后需向队列应答成功。
+
 如果你希望发送的每个消息都应该被成功处理的话，那么你需要P2P模式。
 
+#### Pub/Sub的特点
 
-
-### Pub/Sub的特点
-
-![jms-pub_and_sub](https://raw.githubusercontent.com/dunwu/JavaParty/master/images/%E7%BC%96%E7%A8%8B/middleware/jms/jms-pub_and_sub.jpg)
+![jms-publishSubscribe.gif](http://oyz7npk35.bkt.clouddn.com//image/java/libs/activemq/jms-publishSubscribe.gif)
 
 发布/订阅消息系统支持一个事件驱动模型，消息生产者和消费者都参与消息的传递。生产者发布事件，而使用者订阅感兴趣的事件，并使用事件。该类型消息一般与特定的主题 `javax.jms.Topic` 关联。
 
-每个消息可以有多个消费者
+每个消息可以有多个消费者。
+
 发布者和订阅者之间有时间上的依赖性。针对某个主题（Topic）的订阅者，它必须创建一个订阅者之后，才能消费发布者的消息，而且为了消费消息，订阅者必须保持运行的状态。
+
 为了缓和这样严格的时间相关性，JMS允许订阅者创建一个可持久化的订阅。这样，即使订阅者没有被激活（运行），它也能接收到发布者的消息。
-如果你希望发送的消息可以不被做任何处理、或者被一个消息者处理、或者可以被多个消费者处理的话，那么可以采用Pub/Sub模型
 
+如果你希望发送的消息可以不被做任何处理、或者被一个消息者处理、或者可以被多个消费者处理的话，那么可以采用Pub/Sub模型。
 
+### JMS 编程模型
 
-## JMS 编程模型
+![jms-publishSubscribe.gif](http://oyz7npk35.bkt.clouddn.com//image/java/libs/activemq/jms-publishSubscribe.gif)
 
-![JMS 编程模型](https://raw.githubusercontent.com/dunwu/JavaParty/master/images/%E7%BC%96%E7%A8%8B/middleware/jms/jms-program_model.jpg)
-
-
-
-### ConnectionFactory
+#### ConnectionFactory
 
 创建 `Connection` 对象的工厂，针对两种不同的 jms 消息模型，分别有 `QueueConnectionFactory` 和`TopicConnectionFactory` 两种。可以通过JNDI来查找 `ConnectionFactory` 对象。
 
-
-
-### Connection
+#### Connection
 
 `Connection` 表示在客户端和JMS系统之间建立的链接（对TCP/IP socket的包装）。`Connection` 可以产生一个或多个`Session`。跟 `ConnectionFactory` 一样，`Connection` 也有两种类型：`QueueConnection` 和 `TopicConnection`。
 
-
-
-### Destination
+#### Destination
 
 `Destination` 是一个包装了消息目标标识符的被管对象。消息目标是指消息发布和接收的地点，或者是队列 `Queue` ，或者是主题 `Topic` 。JMS管理员创建这些对象，然后用户通过JNDI发现它们。和连接工厂一样，管理员可以创建两种类型的目标，点对点模型的 `Queue`，以及发布者/订阅者模型的 `Topic`。
 
-
-
-### Session
+#### Session
 
 `Session` 表示一个单线程的上下文，用于发送和接收消息。由于会话是单线程的，所以消息是连续的，就是说消息是按照发送的顺序一个一个接收的。会话的好处是它支持事务。如果用户选择了事务支持，会话上下文将保存一组消息，直到事务被提交才发送这些消息。在提交事务之前，用户可以使用回滚操作取消这些消息。一个会话允许用户创建消息，生产者来发送消息，消费者来接收消息。同样，`Session` 也分 `QueueSession` 和 `TopicSession`。
 
-
-
-### MessageConsumer
+#### MessageConsumer
 
 `MessageConsumer` 由 `Session` 创建，并用于将消息发送到 `Destination`。消费者可以同步地（阻塞模式），或（非阻塞）接收 `Queue` 和 `Topic` 类型的消息。同样，消息生产者分两种类型：`QueueSender` 和`TopicPublisher`。
 
-
-
-### MessageProducer
+#### MessageProducer
 
 `MessageProducer` 由 `Session` 创建，用于接收被发送到 `Destination` 的消息。`MessageProducer` 有两种类型：`QueueReceiver` 和 `TopicSubscriber`。可分别通过 `session` 的 `createReceiver(Queue)` 或 `createSubscriber(Topic)` 来创建。当然，也可以 `session` 的 `creatDurableSubscriber` 方法来创建持久化的订阅者。
 
-
-
-### Message
+#### Message
 
 是在消费者和生产者之间传送的对象，也就是说从一个应用程序传送到另一个应用程序。一个消息有三个主要部分：
 
@@ -87,8 +73,6 @@ JMS 有两种消息模型：
 - 一个消息体（可选）：允许用户创建五种类型的消息（文本消息，映射消息，字节消息，流消息和对象消息）。
 
 消息接口非常灵活，并提供了许多方式来定制消息的内容。
-
-
 
 | Common            | Point-to-Point              | Publish-Subscribe      |
 | ----------------- | --------------------------- | ---------------------- |
@@ -99,9 +83,7 @@ JMS 有两种消息模型：
 | MessageProducer   | QueueSender                 | TopicPublisher         |
 | MessageSender     | QueueReceiver, QueueBrowser | TopicSubscriber        |
 
-
-
-# 安装
+## 安装
 
 **安装条件**
 
@@ -109,15 +91,11 @@ JDK1.7及以上版本
 
 本地配置了 **JAVA_HOME** 环境变量。
 
-
-
 **下载**
 
 支持Windows/Unix/Linux/Cygwin
 
 [ActiveMQ 官方下载地址](http://activemq.apache.org/download.html)
-
-
 
 **Windows下运行**
 
@@ -133,8 +111,6 @@ cd [activemq_install_dir]
 ```
 bin\activemq start
 ```
-
-
 
 **测试安装是否成功**
 
@@ -155,9 +131,7 @@ netstat -an|find “61616”
 5. 添加一个队列（queue）
 
 
-
-
-# 项目中的应用
+## 项目中的应用
 
 **引入依赖**
 
@@ -168,8 +142,6 @@ netstat -an|find “61616”
   <version>5.14.1</version>
 </dependency>
 ```
-
-
 
 **Sender.java**
 
@@ -234,8 +206,6 @@ public class Sender {
     }
 }
 ```
-
-
 
 **Receiver.java**
 
@@ -313,9 +283,7 @@ Receiver的输出内容
 收到消息ActiveMQ 发送消息3
 ```
 
-
-
-# 参考
+## 参考
 
 [ActiveMQ 官网](http://activemq.apache.org/)
 
